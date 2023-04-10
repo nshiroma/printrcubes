@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "d9c471f2-31ab-437d-bf7a-bf44808c9438",
+		"name": "Flask API Restful",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload PDF to Printer Queue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pdf_file",
+							"type": "file",
+							"src": "/path/to/file.pdf"
+						},
+						{
+							"key": "printer_queue",
+							"value": "Printer 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/print",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"print"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+
