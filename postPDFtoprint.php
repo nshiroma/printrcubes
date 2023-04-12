@@ -4,12 +4,10 @@ $curl = curl_init();
 $filename='packed-unit.pdf';
 $file_path = '/var/www/html/printix/';
 $file_path .=$filename;
-
-
 $printer_queue = 'QL800_TST';
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'http://10.136.32.105:5000/print',
+  CURLOPT_URL => 'http://64.225.102.244:5000/print',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
