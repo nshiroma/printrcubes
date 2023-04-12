@@ -23,6 +23,6 @@ curl_setopt_array($curl, array(
 ));
 
 $response = curl_exec($curl);
-
+//comment
 curl_close($curl);
 echo $response;
